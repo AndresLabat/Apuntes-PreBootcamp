@@ -1,0 +1,17 @@
+
+*{
+    display: flex;  /* adapta todo el contenido en anchura y altura */
+    justify-content: end; /* coloca los elementos en el eje horizontal (en este caso a la derecha)*/
+    justify-content: space-between; /* reparte de manera igualitaria los elementos de forma que ocupen todo el ancho, 
+    empezando pegado a los margenes */
+    justify-content: space-around; /* reparte de manera igualitaria los elementos de forma que ocupen todo el ancho, 
+    contando tambien en esa igualdad de espacio con la separacion que hay entre los elementos */
+    justify-content: space-evenly; /* reparte de manera igualitaria los elementos de forma que ocupen todo el ancho, 
+    iguala toda las separaciones entre elementos, tanto desde el margen como entre elementos */
+    flex-wrap: wrap; /* en lugar de hacer grandes o pequeños los elementos para que se repartan por su contenido, 
+    estos se van a apilar, de forma que se colocaran debajo */
+    flex-direction: column; /* ordena los elementos de arriba a abajo, en forma de columna,
+    al usar esta propiedad, justify-content y align-items */
+    align-items: center; /* coloca los elementos en el eje vertical centrados*/
+    height: 50%; /* le damos una altura determinada para que centre los elementos */
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura listas e imagenes</title>
+</head>
+<body>
+    <header>
+        <h1>Estructura, listas e imagenes en HTML 5</h1>
+
+        <nav>
+            <h2>Listas ordenadas</h2>
+            <ol>
+                <li>GTA</li>
+                <li>Red Dead</li>
+                <li>Batman Arkham</li>
+            </ol>
+
+            <h2>Listas desordenadas</h2>
+            <ul type="circle">
+                <li>Detroit become human</li>
+                <li>Little hope</li>
+                <li>Until Dawn</li>
+            </ul>
+
+            <h2>Listas anidadas</h2>
+            <ul>
+                <li>Accion
+                    <ul>
+                        <li>Mercenarios</li>
+                        <li>Rambo</li>
+                        <ol>
+                            <li>Rambo 1</li>
+                            <li>Rambo 2</li>
+                            <li>Rambo 3</li>
+                        </ol>
+                        <li>Rocky</li>
+                    </ul>
+                </li>
+                <li>Romanticas
+                    <ul>
+                        <li>Big fish</li>
+                        <li>La casa del lago</li>
+                        <li>Amor a primera vista</li>
+                    </ul>
+                </li>
+                <li>Terror
+                    <ul>
+                        <li>Expediente Warren</li>
+                        <li>Insidius</li>
+                        <li>The darkness</li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <h2>Listas de definicion</h2>
+            <dl>
+                <dt>Naranja</dt>
+                <dd>
+                    Fruta acida de color naranja
+                </dd>
+
+                <dt>Limon</dt>
+                <dd>
+                    Fruta acida de color amarillo
+                </dd>
+
+                <dt>Manzana</dt>
+                <dd>
+                    Fruta de color rojo o verde dura y crujiente
+                </dd>
+            </dl>
+
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <!--un "div" es una caja generica que se usa para luego darle estilo en Css-->
+        </div>
+
+        <h2>Imagenes HTML</h2>
+
+        <!--FORMA 1, copiando la URL de internet-->
+        <img src="https://generacionxbox.com/wp-content/uploads/2023/06/diablo_iv_lilith3.jpg" 
+        alt="imagen de Lilith" 
+        width="300"
+        title="esto es lo que se lee al poner el cursor encima y dejarlo quieto"><br><br>
+        <!--"width" indica el ancho de la imagen-->
+
+        <!--FORMA 2, cogiendo la imagen de una carpeta de fuera del proyecto ¡NO SE USA NUNCA!-->
+        <img src="C:\Users\andre\Desktop\Andres\fotitos\album boda ordenado\7.jpg" 
+        alt="imagen de Andres boda" 
+        width="300" 
+        title="Andres"><br><br>
+
+        <!--FORMA 3, ruta relativa, se coge la imagen de una carpeta de dentro del proyecto ES LA MAS USADA-->
+        <img src="img/diablo_4_lilith_artwork.jpg" 
+        alt="imagen de Lilith 2"
+        width="300"
+        title="Lilith"><br><br>
+
+        <!--ETIQUETA FIGURE, se usa para añadir imagenes que aunque las quites, no afectan a la comprension del texto, son complementarias-->
+        <p>
+            Existen algunos <strong>memes</strong> que su unica funcion es hacer reir, y otros que hacen critica
+        <figure>
+            <img src="img/WhatsApp Image 2023-07-18 at 11.54.41.jpeg" alt="meme" width="200">
+            <figcaption>Meme de ejemplo</figcaption>
+        </figure>
+        pero eso no quiere decir que no cumplan una funcion en la sociedad
+        </p>
+
+        <section>
+            <article>
+                <h2>Titulo articulo</h2>
+                <span>Programacion</span> <time>30-07-2023</time>
+                <p>Esto es un articulo de prueba</p>    
+            </article>
+
+            <article>
+                <h2>Titulo articulo</h2>
+                <span>Programacion</span> <time>30-07-2023</time>
+                <p>Esto es un articulo de prueba</p>    
+            </article>
+
+            <article>
+                <h2>Titulo articulo</h2>
+                <span>Programacion</span> <time>30-07-2023</time>
+                <p>Esto es un articulo de prueba</p>    
+            </article>
+        </section>
+
+        <section>
+            <!--otras noticias-->
+        </section>
+    </main>
+
+    <aside>
+        <!--BARRA LATERAL-->
+    </aside>
+
+    <footer>
+        <p>Curso HTML5 - Andres Labat - 2023 &copy;</p>
+        <!--"&copy" pone el simbolo de copyright-->
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML</title>
+</head>
+<body>
+    <h1>Formulario HTML</h1>
+    <form action="paginaweb.com" method="post">
+    <!--"action" indica a donde queremos enviar el formulario-->
+    <!--"method" indica si queremos un GET (no seguro, se lee en la URL) o un POST (mas seguro)-->
+        
+        <fieldset>
+            <!--"fieldset" nos recuadra esta seccion del formulario-->
+            <legend>Información Personal</legend>
+            <!--"legend" le da titulo a ese recuadro del "fieldset"-->
+            <div>
+                <label for="nombre">Nombre:</label>
+                <!--"for" dice que este label pertenece al input con "id" nombre (indicado aqui abajo) -->
+                <input type="text" name="nombre" id="nombre" placeholder="escribe tu nombre">
+                <!--"name" es el nombre que se le da para que el servidor lo identifique de esa manera-->
+                <!--"id" es la manera en la que se le va a llamar para darle estilos en Css y asociarlo a su "label"-->    
+            </div>
+
+            <div>
+                <label for="descripcion">Descripcion</label>
+                <textarea name="" id="descripcion" cols="30" rows="4" placeholder="Maximo 250 caracteres"></textarea>  
+            </div>
+
+            <div>
+                Email:
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div>
+                Contraseña:
+                <input type="password" name="password" id="password">
+            </div>
+
+            <div>
+                Radio:
+                <input type="radio" name="genero" id="hombre" value="hombre">
+                <label for="hombre">Hombre</label>
+                <input type="radio" name="genero" id="mujer" value="mujer">
+                <label for="mujer">Mujer</label>
+            </div>
+
+            <div>
+                Select:
+                <select name="genero select" id="genero select">
+                    <option value="hombre 2">Hombre</option>
+                    <option value="mujer 2">Mujer</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div>
+                Checkbox:
+                <label for="mayor">
+                    <input type="checkbox" name="" id="mayor">Mayor de edad
+                </label>
+
+                <label for="menor">
+                    <input type="checkbox" name="" id="menor">Menor de edad
+                </label>
+            </div>
+
+            <div>
+                Color:
+                <input type="color" name="color" id="color">
+            </div>
+
+            <div>
+                Fecha:
+                <input type="date" name="date" id="date">
+            </div>
+
+            <div>
+                Ficheros:
+                <input type="file" name="file" id="file">
+            </div>
+
+            <div>
+                Imagen:
+                <input type="image" src="img/1308454.jpeg" alt="enviar" width="150">
+                <!--Usa la imagen como boton de "submit"-->
+            </div>
+
+            <div>
+                Oculto:
+                <input type="hidden" name="oculto" value="supercalifragilisticoespialidoso">
+                <!--sirve para enviar informacion oculta-->
+            </div>
+
+            <div>
+                Numero:
+                <input type="number" name="number" id="number">
+            </div>
+
+            <div>
+                Rango:
+                <input type="range" name="rango" id="rango">
+            </div>
+
+            <div>
+                Buscar:
+                <input type="search" name="buscar" id="buscar">
+                <button>Buscar</button>
+            </div>
+
+            <div>
+                Telefono:
+                <input type="tel" name="telefono" id="telefono">
+            </div>
+
+            <div>
+                Hora:
+                <input type="time" name="hora" id="hora">
+            </div>
+
+            <div>
+                Mes:
+                <input type="month" name="mes" id="mes">
+            </div>
+
+            <div>
+                Sitio Web:
+                <input type="url" name="url" id="url">
+            </div>
+
+            <div>
+                Barra progreso:
+                <progress min="1" max="100" value="45"></progress>
+            </div>
+
+            <div>
+                Lista de datos:
+                <input list="frutas" name="fruta"> 
+                <datalist id="frutas">
+                    <option value="manzana"></option>
+                    <option value="naranja"></option>
+                    <option value="cereza"></option>
+                    <option value="sandia"></option>
+                    <option value="pera"></option>
+                </datalist>
+            </div>
+
+        </fieldset>  
+    
+        <input type="submit" value="enviar">
+        <input type="reset" value="limpiar formulario">
+    </form>
+
+    <h1>Validacion</h1>
+    <form action="">
+        <input type="text" required
+            minlength="5"
+            maxlength="15">
+        <!--"required" se usa para obligar a que este campo este relleno, si no no se envia el formulario-->
+        <!--"minlenght" indica la cantidad de caracteres minimos que hay que escribir-->
+        <!--"maxlenght" indica la cantidad de caracteres maximo que hay que escribir-->
+
+        <input type="number" required
+            max="20"
+            min="5">
+
+        <input type="submit" value="enviar">
+    </form>
+ 
+</body>
+</html>

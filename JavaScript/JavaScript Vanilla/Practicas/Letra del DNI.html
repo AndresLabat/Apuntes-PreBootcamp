@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letra del DNI</title>
+</head>
+<body>
+    <script>
+        var dni = Number(prompt("Introduce tu DNI, solo los numeros"));
+        var letra = prompt("Introduce ahora la letra en mayuscula");
+        
+        alert(dni + "-" + letra);
+
+        function ComprobarDNI(numero, letraOriginal){
+            var letras = "TRWAGMYFPDXBNJZSQVHLCKET"; // Los Strings son arrays de caracteres
+            var letraComp = letras[numero % 23]; // esto nos devuelve el resto de la division, y esa es su posicion en el array
+
+            if(letraOriginal === letraComp){
+                alert("Tu DNI es valido");
+            }else{
+                alert("La letra de tu DNI no es correcta");
+            }
+        }
+
+        ComprobarDNI(dni, letra);
+    </script>
+</body>
+</html>

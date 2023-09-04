@@ -1,0 +1,86 @@
+*{  /* con el "*" seleccionamos todos los elementos de la pagina */
+    margin: 0px;    /* asi elimina los margenes */
+    padding: 0px;   /* es el margen interior dentro de una caja*/
+}
+
+body{
+    background: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    /*width: 70%;   otra manera de poner el ancho*/
+    width: 1100px;  /* define el ancho*/
+    margin: 0px auto;    /* me centra este elemento al centro de la pagina web */
+    border: 1px solid black;  /* le pone un corde rojo a 1px de distancia */
+}
+
+header{
+    background: red;
+    height: 100px;  /* define la altura */
+    width: 100%;    /* define la anchura */
+    margin: 0px;
+    text-align: center; /*centra los textos a lo ancho*/
+    line-height: 100px; /* lo centra a lo alto, le hemos indicado 100px porque es lo que tiene en el height */
+    color: white;
+    border-bottom: 3px dashed black; /* le pone un borde por la parte inferior discontinuo(dashed) de color negro */
+}
+
+nav{
+    background: lightblue;
+    height: 50px;   /* define la altura */
+    border-bottom: 1px solid black; /* pone un borde inferior */
+}
+
+nav ul li{
+    float: left;    /* coloca los elementos uno a la izquierda del otro */
+    list-style: none;   /* elimina los estilos que vinieran predefinidos */
+    margin: 10px;   /* le da un margen de 10px entre elementos */
+    line-height: 30px;  /* para centrarlos en altura respecto al nav porque este es de 50px */
+}
+
+.clearfix{
+    clear: both;    /* cuando flotan los elementos, los demas se quedan abajo */
+}
+
+#content{
+    float: left;   /* para que el contenido se quede a la izquierda */
+    width: calc(80% - 20px); /* define el ancho en proporcion */
+    min-height: 500px;  /* define la altura minima */
+    background: green;
+    padding: 10px;  /* da margenes interiores, hay que actualizar el width para que no se descuadre todo con un calc(80% - 20px) */
+
+}
+
+.article{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(200, 194, 194);
+}
+
+.article:first-child{
+    padding-top: 10px;
+    border-top: 1px solid rgb(200, 194, 194);
+}
+
+.article h2{
+    font-size: 25px;    /* cambia el tamaño de la fuente */
+}
+
+aside{
+    float: left;    /*para que el contenido se quede a la izquierda del contenido anterior */
+    width: calc(20% - 20px); /*define el ancho en proporcion */
+    min-height: 500px;  /* define la altura minima */
+    background: orange;
+    padding: 10px;  /* da margenes interiores, hay que actualizar el width para que no se descuadre todo con un calc(20% - 20px) */
+}
+
+footer{
+    background: black;
+    color: white;
+    text-align: center; /*centra los textos a lo ancho*/
+    height: 50px;   /* define la altura */
+    line-height: 50px;  /* lo centra a lo alto, le hemos indicado 50px porque es lo que tiene en el height */
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <script>
+        function rejectedPromise(){
+    return new Promise(function(res,rej){
+        rej("promesa rechazada");
+    });
+}
+async function get(){
+    try{
+        await rejectedPromise();    //  al rechazarse la promesa, esta lanza un error
+    } catch (error){
+        return error
+        console.log(error);
+    }
+}
+get().then(console.log);
+
+    </script>
+</body>
+</html>

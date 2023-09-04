@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora con funciones</title>
+</head>
+<body>
+    <script>
+        var operacion = prompt("Introduce suma, resta, multi o divi");
+        var num1 = prompt("Introduce num1");
+        var num2 = prompt("Introduce num2");
+        // PROMPT DEVUELVE UN STRING
+
+        function Suma(num1, num2){
+        /* COMO PROMPT DEVUELVE UN STRING, RECONOCE EL SIMBOLO + COMO CONCATENACION
+        POR LO QUE HAY QUE PARSEARLO A INT, Y ENTONCES LO RECONOCE COMO SUMA ARITMETICA*/    
+            num3=parseInt(num1);
+            num4=parseInt(num2);
+            return num3 + num4;
+        }
+
+        function Resta(num1, num2){
+            return num1 - num2;
+        }
+
+        function Multi(num1, num2){
+            return num1 * num2;
+        }
+
+        function Divi(num1, num2){
+            return num1 / num2;
+        }
+
+        switch(operacion){
+            case "suma":
+            alert(Suma(num1, num2));    
+            // "alert" en lugar de "console.log" para que nos salga el resultado en una ventana
+            break;
+            case "resta":
+            alert(Resta(num1, num2));
+            break;
+            case "multi":
+            alert(Multi(num1, num2));
+            break;
+            case "divi":
+            alert(Divi(num1, num2));
+            break;
+        }
+
+    </script>
+</body>
+</html>

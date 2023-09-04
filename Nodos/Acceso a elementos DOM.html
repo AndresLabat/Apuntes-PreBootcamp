@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Parrafo 1</p>
+    <p>Parrafo 2</p>
+    <p>Parrafo 3</p>
+    <p>Parrafo 4</p>
+
+    <div class="grid"></div>
+
+    <div id="app"></div>
+
+    <input type="text" name="email" id="email2233">
+
+    <div class="gridgrid"><p id="idid"></p></div>
+
+    <script>
+
+/*  SELECCIONAR POR ETIQUETA
+document.getElementsByTagName():
+
+obtiene los elementos de la pagina HTML cuya etiqueta sea igual que el 
+parametro que se le pasa a la funcion. 
+
+Podemos seleccionar todos los elementos del HTML con etiqueta "p"
+de la siguiente forma: 
+
+NOTA: Si observamos el tipo de variable, es un array de Objetos de HTML
+asi que habra que iterar la variable para usar cada <p>
+*/
+
+let parrafos = document.getElementsByTagName("p");
+
+
+/*  SELECCIONAR POR CLASS 
+document.getElementsByClassName():
+
+Obtiene los elementos que contenga la clase que pasemos por parametros.
+En este caso selecciona los objetos de clase "grid" 
+NOTA: Si observamos el tipo de variable, es un objeto HTML
+*/
+
+let grid = document.getElementsByClassName("grid");
+
+
+/* SELECCIONAR POR ID
+document.getElementsById():
+
+Devuelve el elemento HTML cuyo Id coincide con el parametro indicado en la funcion.
+En este caso selecciona el objeto de id "app" 
+NOTA: Si observamos el tipo de variable, es un objeto HTML
+*/
+
+let app = document.getElementsById("app");
+
+
+/* SELECCIONAR POR NAME
+document.getElementsByName():
+
+Devuelve el elemento HTML cuyo Name coincide con el parametro indicado en la funcion.
+En este caso selecciona el objeto de Name "email" 
+NOTA: Si observamos el tipo de variable, es un objeto HTML
+*/
+
+let email = document.getElementsByName("email");
+
+
+/* SELECCIONAR POR SELECTORES DE Css
+document.querySelector():
+
+Nos permite usar los selectores de Css para acceder a los elementos del HTML
+En este caso selecciona el objeto de Name "email" 
+NOTA: Si observamos el tipo de variable, es un objeto HTML
+*/
+
+let selector = document.querySelector(".grid>#id");
+
+    </script>
+
+</body>
+</html>

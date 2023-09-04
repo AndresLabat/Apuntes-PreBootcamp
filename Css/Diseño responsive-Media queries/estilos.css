@@ -1,0 +1,16 @@
+/* con esto le indico que cuando se cumpla la condicion de que el ancho de la
+pantalla sea de minimo 600px, el background sea amarillo, si el ancho de la 
+pantalla cumple la condicion de ser al menos de 1200 px y si no, rojo */
+
+div{
+    background: red;
+    @media (min-width: 600px){
+    background: yellow;   
+    }
+    @media (min-width: 1200px){
+        background: blue;   
+    }
+    @media (min-width: 1500px){
+        background: gray;
+    }
+}

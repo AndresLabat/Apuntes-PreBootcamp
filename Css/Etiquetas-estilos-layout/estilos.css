@@ -1,0 +1,111 @@
+span{
+    background: green; 
+    display: flex; 
+    /* "inline" es el display por defecto, 
+    "inline-block" nos permite darle un widht,
+    "none" hace que desaparezca, 
+    "block" hace que ocupe todo el ancho de la pagina */
+
+    /* display: flex -> ayuda a colocar las cajas como si fueran celdas 
+    de tablas, con un comportamiento predecible y adaptable */
+    
+    width: 200px;
+    height: 50px;
+    align-items: baseline;
+    /* "flex-start" pone el texto en altura arriba,
+    "flex-end" pone el texto en altura abajo,
+    "center" pone el texto en altura en el medio */
+}
+
+.padre{
+    background: red;
+    padding: 10px;
+    display: flex;
+    
+    flex-direction: row; 
+    /* "row" esta por defecto,
+    "row-reverse" lo pone a la derecha de la pantalla en orden inverso,
+    "column" pone el uno debajo del otro,
+    "column-reverse" pone el uno debajo del otro y les cambia el orden */
+    
+    justify-content: flex-start;
+    /* "flex-start" esta por defecto,
+    "flex-end" lo posiciona al final,
+    "center" en el centro,
+    "space-between" reparte el espacio entre cada hijo a lo ancho,
+    "space-around" asigna todo el espacio disponible alrededor de cada hijo,
+    "space-evenly" reparte el mismo espacio para cada hijo */
+
+    width: 200px;
+    height: 200px;
+    align-items: center;
+}
+
+.hijo{
+    background: white;
+}
+
+/* seleccionamos el primer elemento .hijo dentro de .padre */
+.hijo:nth-child(2){
+    align-self: flex-start;
+}
+
+.hijo:nth-child(4){
+    align-self: flex-end;
+}
+
+.padre2{
+    background: red;
+    padding: 10px;
+    display: flex;
+    width: 500px;
+
+    flex-wrap: wrap; 
+    /* hace que los elementos se readapten cuando el "width" es inferior al ancho del dispositivo donde los vemos */
+}
+
+.hijo2{
+    width: 100px;
+}
+
+.hijo2:nth-child(1){
+    flex: 1;    /* distancia entre elementos */
+    background: white;
+    order: 4;   /* cambia el orden del elemento respecto del resto de hijos */
+}
+
+.hijo2:nth-child(2){
+    flex: 2;
+    background: gray;
+    order: 2;
+}
+
+.hijo2:nth-child(3){
+    flex: 3;
+    background: green;
+    order: 1;
+}
+
+.hijo2:nth-child(4){
+    flex: 4;
+    background: orange;
+    order: 3;
+}
+
+/*  CREACION DE UNA REJILLA */
+
+.containerGrid{
+    background: red;
+    padding: 5px;
+    width: 300px;
+    display: grid;      /* asi creamos la rejilla de celdas */
+    grid-template-columns: 150px 150px; /* asi le damos el ancho a las columnas de la rejilla */
+    /* tambien podria escribirse: grid-template-columns: repeat(2, 150px) */
+    grid-template-rows: 40px, 40px, 40px;   /* asi le damos altura a las filas */
+    /* tambien podria escribirse: grid-template-rows: repeat(3, 40px) */
+    grid-gap: 20px; /* asi le damos distancia entre los elementos de la grid */
+}
+
+.containerGrid > div{
+    background: white;
+}

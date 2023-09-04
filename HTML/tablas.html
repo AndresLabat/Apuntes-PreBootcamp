@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas HTML</title>
+</head>
+<body>
+    <h1>Tablas</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Titulo</th>
+                <th>Genero</th>
+                <th>Año</th>
+            </tr>
+        </thead>    
+        <tbody>
+            <tr>
+                <td>El señor de los anillos</td>
+                <td>Aventuras</td>
+                <td>2004</td>
+            </tr>
+            <tr>
+                <td>Joker</td>
+                <td colspan="2" rowspan="2">Drama</td>
+                <!--"colspan" sirve para combinar celdas de columnas (en este caso 2)-->
+                <!--"rowspan" sirve para combinar celdas de filas (en este caso 2)-->
+            </tr>
+                <td>Openhaimer</td>
+        </tbody>
+        <tfoot>
+            <td colspan="3">
+                Curso de HTML - Andres Labat
+            </td>
+        </tfoot>
+    </table>
+
+    <h1>Elementos en bloque y en linea</h1>
+    <!--Elementos en "bloque" significa que son elementos que ocupan hasta el final del borde lateral, ejemplo:-->
+    <div>Hola</div><div>Hola 2</div>
+    <!--Elementos en "linea" son elementos que solo ocupan el espacio justo, ejemplo:-->
+    <a href="">Enlace 1</a><a href="">_Enlace 2</a>
+
+</body>
+</html>

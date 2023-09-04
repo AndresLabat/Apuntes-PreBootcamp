@@ -1,0 +1,89 @@
+*{  /* con el "*" seleccionamos todos los elementos de la pagina */
+    margin: 0px;    /* asi elimina los margenes */
+    padding: 0px;   /* es el margen interior dentro de una caja*/
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif}
+
+#container{
+    width: 1100px;  /* define el ancho*/
+    margin: 0px auto;    /* me centra este elemento al centro de la pagina web */
+    border: 1px solid black;  /* le pone un corde rojo a 1px de distancia */
+}
+
+header{
+    background: lightsalmon;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    line-height: 80px;
+    color: white;
+    border-bottom: 1px solid black;
+}
+
+nav{
+    background: lightblue;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+
+nav ul li{
+    float: left;
+    margin: 15px;
+    line-height: 20px; 
+}
+
+.clearfix{
+    clear: both;    /* cuando flotan los elementos, los demas se quedan abajo */
+}
+
+main{
+    background: lightgreen;
+    float: left;
+    width: calc(75% - 20px);
+    padding: 10px;
+    min-height: 800px;
+    
+}
+
+h2{
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+article{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px dashed white;
+    padding-bottom: 15px;
+
+}
+
+aside{
+    background: lightgoldenrodyellow;
+    float: left;
+    width: calc(25% - 20px);
+    padding: 10px;
+    min-height: 800px;
+}
+
+footer{
+    background: gray;
+    height: 35px;
+    line-height: 35px;
+    color: white;
+    padding-left: 10px;
+}
+
+#dieta{
+    margin-top: 15px;
+    text-align: center;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario{
+   padding-top: 15px;
+}
+

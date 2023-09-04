@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entradas de cine</title>
+</head>
+<body>
+    <script>
+        var nombre = prompt("Introduce el nombre");
+        var edad = Number(prompt("Introduce la edad"));
+        var pelisPermitidas = [];
+
+        //  Array de objetos:
+        var listaPeliculas = [
+            {titulo: "Soy Leyenda", edadMinima: 13},
+            {titulo: "Rey Leon", edadMinima: 3},
+            {titulo: "La Marca del Demonio", edadMinima: 18},
+            {titulo: "A todo Gas", edadMinima: 8}
+        ]
+
+        for(var i=0; i<listaPeliculas.length; i++){
+            if(edad >= listaPeliculas[i].edadMinima){
+                pelisPermitidas.push(listaPeliculas[i].titulo)
+            }
+        }
+
+        /* tenemos un array que contiene un listado de peliculas(objetos), lo recorremos con un for,
+        en ese recorrido hacemos que si se cumple una condicion, introduzca ese elemento del array en otro array,
+        por ultimo imprimimos los titulos de ese nuevo array separados por un ", " */
+
+        console.log(nombre + " puede ver las siguientes pelis " + pelisPermitidas.join(", "));
+        
+    </script>
+</body>
+</html>

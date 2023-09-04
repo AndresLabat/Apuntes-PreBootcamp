@@ -1,0 +1,30 @@
+
+*{
+    display: grid; /* nos permite crear una rejilla donde colocar los elementos */
+    grid-template-columns: 200px 200px 200px 200px; /* le digo cuantas columnas quiero que tenga la rejilla */
+/*  grid-template-columns: repeat(4, 1fr) /* divideme el espacio en 4 columnas, cada una que ocupe una fraccion de ese espacio */
+    grid-template-rows: 200px 200px 200px; /* le digo cuantas filas quiero que tenga la rejilla */
+/*  grid-template-rows: repeat(4, 1fr) /* divideme el espacio en 4 filas, cada una que ocupe una fraccion de ese espacio */
+}
+
+/* ahora tenemos que situar los elementos dentro del grid: */
+
+.block1{
+    grid-column: 1; /* primera columna */
+    grid-row: 1; /*primera fila */
+    background-color: lightblue;
+}
+
+.block2{
+    grid-column: 2; /* segunda columna */
+    grid-row: 1; /*primera fila */
+    background-color: lightgreen;
+}
+
+.block3{
+    grid-column: 3; /* tercera columna */
+    grid-row: 1; /*primera fila */
+    background-color: lightseagreen;
+}
+
+/* etc... */

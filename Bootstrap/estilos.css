@@ -1,0 +1,22 @@
+.container{
+    background: #4D346F;
+}
+
+.container-fluid{
+    background: #4D346F;
+}
+
+#row1{
+    background: lightblue;
+    color: blue;
+}
+
+#row2{
+    background: lightpink;
+    color: red;
+}
+
+#row3{
+    background: rgb(227, 188, 238);
+    color: purple;
+}
